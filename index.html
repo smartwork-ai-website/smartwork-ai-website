@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SmartWork AI helps businesses turn everyday data into clear reports, dashboards and professional business documents.">
+<title>SmartWork AI | Smarter Work. Clearer Results.</title>
+<style>
+:root{--navy:#101d3a;--blue:#2463eb;--cyan:#20b8c8;--ink:#172033;--muted:#65718a;--bg:#f5f8ff;--line:#e5eaf3;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:1.22rem;font-weight:800;color:var(--navy);letter-spacing:-.4px}.brand span{color:var(--blue)}
+nav{display:flex;gap:26px;font-size:.94rem;color:#4e5b73}nav a:hover{color:var(--blue)}
+.btn{display:inline-block;padding:12px 19px;border-radius:10px;background:var(--blue);color:white;font-weight:700;border:0}.btn.secondary{background:white;color:var(--navy);border:1px solid var(--line)}
+.hero{padding:86px 0 76px;background:radial-gradient(circle at 85% 20%,#dceaff 0,transparent 32%),linear-gradient(135deg,#f7faff,#edf4ff)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}.eyebrow{color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:1.4px;font-size:.78rem}
+h1{font-size:clamp(2.5rem,5vw,4.3rem);line-height:1.08;letter-spacing:-2px;color:var(--navy);margin:14px 0 20px}.hero p{font-size:1.12rem;color:var(--muted);max-width:590px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.preview{background:white;border:1px solid #dce5f4;border-radius:18px;padding:22px;box-shadow:0 24px 60px #203b6918}.preview-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;font-weight:800;color:var(--navy)}.tag{font-size:.72rem;color:#16765b;background:#e7f8f1;padding:5px 9px;border-radius:30px}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.metric{background:#f5f8ff;border-radius:12px;padding:13px}.metric small{display:block;color:var(--muted);font-size:.7rem}.metric strong{font-size:1.35rem;color:var(--navy)}.bars{height:120px;display:flex;align-items:end;gap:10px;padding:18px 8px 0;border-bottom:1px solid var(--line)}.bar{flex:1;background:linear-gradient(180deg,var(--cyan),var(--blue));border-radius:6px 6px 0 0}.bar:nth-child(1){height:48%}.bar:nth-child(2){height:68%}.bar:nth-child(3){height:55%}.bar:nth-child(4){height:82%}.bar:nth-child(5){height:72%}.bar:nth-child(6){height:95%}
+section{padding:76px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 38px}.section-head h2{font-size:2.1rem;line-height:1.2;color:var(--navy);margin:8px 0}.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:24px}.icon{width:44px;height:44px;border-radius:12px;background:#edf3ff;color:var(--blue);display:grid;place-items:center;font-size:1.3rem}.card h3{margin:15px 0 7px;color:var(--navy)}.card p{margin:0;color:var(--muted);font-size:.94rem}
+.samples{background:#fff}.sample-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.sample{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}.sample-art{padding:22px;background:#f1f5ff;min-height:180px}.sample-art h3{margin:0 0 14px;color:var(--navy)}.mini-table{width:100%;border-collapse:collapse;background:white;font-size:.78rem}.mini-table th,.mini-table td{padding:8px;text-align:left;border-bottom:1px solid var(--line)}.mini-table th{color:#64708a;background:#f8faff}.sample-copy{padding:20px}.sample-copy p{color:var(--muted);margin:5px 0 0;font-size:.92rem}.demo-note{font-size:.75rem;color:#7b8497;margin-top:12px}
+.process{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:22px;border-left:3px solid var(--blue);background:white;border-radius:0 12px 12px 0}.step b{color:var(--blue);font-size:.8rem}.step h3{margin:5px 0;color:var(--navy)}.step p{margin:0;color:var(--muted);font-size:.92rem}
+.contact{background:var(--navy);color:white;text-align:center}.contact h2{font-size:2.25rem;margin:0 0 12px}.contact p{color:#c8d3e8;max-width:620px;margin:0 auto 24px}.contact .btn{background:var(--cyan);color:#09213b}.contact-line{margin-top:22px;color:#d7e1f4;font-size:.94rem}.contact-line a{text-decoration:underline}
+footer{padding:24px 0;background:#0b152b;color:#aebbd2;font-size:.85rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.cards,.process{grid-template-columns:1fr}.sample-grid{grid-template-columns:1fr}nav{gap:12px;font-size:.82rem}.nav{height:auto;min-height:68px;flex-wrap:wrap;padding:12px 0}.hero{padding:58px 0}}
+@media(max-width:480px){nav a:not(.btn){display:none}.metrics{gap:6px}.metric{padding:9px}.metric strong{font-size:1.1rem}section{padding:58px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#">SmartWork <span>AI</span></a><nav><a href="#services">Services</a><a href="#samples">Project samples</a><a href="#process">How it works</a><a class="btn" href="#contact">Contact us</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div><div class="eyebrow">Practical digital support for growing businesses</div><h1>Smarter work.<br>Clearer results.</h1><p>We turn spreadsheets and business information into clean data, useful dashboards, professional reports and presentations—so your team can focus on decisions, not formatting.</p><div class="actions"><a class="btn" href="#samples">Explore project samples</a><a class="btn secondary" href="#contact">Request a free sample</a></div></div>
+<div class="preview"><div class="preview-top"><span>Supplier Performance Snapshot</span><span class="tag">DEMO DATA</span></div><div class="metrics"><div class="metric"><small>Suppliers</small><strong>12</strong></div><div class="metric"><small>On-time delivery</small><strong>96.4%</strong></div><div class="metric"><small>Quality score</small><strong>98.1%</strong></div></div><div class="bars"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div><div class="demo-note">Illustrative dashboard preview. All figures are fictional sample data.</div></div>
+</div></section>
+<section id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">What we do</div><h2>Simple services. Useful outcomes.</h2><p>Flexible support for teams that need accurate, clear and professional business deliverables.</p></div><div class="cards">
+<div class="card"><div class="icon">▦</div><h3>Excel data cleaning</h3><p>Remove duplicates, standardize formats, organize records and make spreadsheets easier to use.</p></div>
+<div class="card"><div class="icon">▥</div><h3>Dashboards & analysis</h3><p>Turn raw data into clear KPI dashboards, summaries, charts and actionable insights.</p></div>
+<div class="card"><div class="icon">✓</div><h3>Supplier quality reports</h3><p>Professional supplier scorecards, rejection summaries, defect tracking and delivery reports.</p></div>
+<div class="card"><div class="icon">▤</div><h3>Operations reports</h3><p>Structured production, inventory, process and performance reporting for business teams.</p></div>
+<div class="card"><div class="icon">✎</div><h3>CV formatting</h3><p>Clean, readable and professional resumes tailored to the role you are applying for.</p></div>
+<div class="card"><div class="icon">▧</div><h3>Business presentations</h3><p>Well-organized PowerPoint presentations for proposals, reviews and project updates.</p></div>
+</div></div></section>
+<section class="samples" id="samples"><div class="wrap"><div class="section-head"><div class="eyebrow">Work showcase</div><h2>Project samples</h2><p>Examples of the type of work SmartWork AI can prepare. These previews use fictional demonstration data, not client information.</p></div>
+<div class="sample-grid">
+<div class="sample"><div class="sample-art"><h3>Supplier Quality Scorecard</h3><table class="mini-table"><tr><th>Supplier</th><th>PPM</th><th>OTD</th><th>Status</th></tr><tr><td>Alpha Components</td><td>420</td><td>98%</td><td>Good</td></tr><tr><td>Nova Circuits</td><td>760</td><td>94%</td><td>Watch</td></tr><tr><td>Vertex Metals</td><td>180</td><td>99%</td><td>Good</td></tr></table></div><div class="sample-copy"><strong>01 · Supplier quality</strong><p>Supplier-wise quality, delivery and performance tracking for review meetings.</p></div></div>
+<div class="sample"><div class="sample-art"><h3>Monthly Operations Summary</h3><div class="metrics"><div class="metric"><small>Output</small><strong>8.4k</strong></div><div class="metric"><small>Rework</small><strong>1.8%</strong></div><div class="metric"><small>Plan achieved</small><strong>97%</strong></div></div><div class="bars"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div></div><div class="sample-copy"><strong>02 · Operations dashboard</strong><p>At-a-glance production KPIs with a simple visual summary for management.</p></div></div>
+</div><p class="demo-note">Sample company names and all metrics shown above are fictional and provided only to demonstrate presentation style.</p>
+</div></section>
+<section id="process"><div class="wrap"><div class="section-head"><div class="eyebrow">A straightforward process</div><h2>From request to ready-to-use</h2></div><div class="process">
+<div class="step"><b>STEP 01</b><h3>Share your requirement</h3><p>Tell us what you need and share a sample or brief, removing any confidential information.</p></div>
+<div class="step"><b>STEP 02</b><h3>We prepare a sample</h3><p>We confirm the scope and create a small sample so you can review the approach.</p></div>
+<div class="step"><b>STEP 03</b><h3>Review & delivery</h3><p>After approval, we complete the agreed work and deliver the final files.</p></div>
+</div></div></section>
+<section class="contact" id="contact"><div class="wrap"><h2>Have a project in mind?</h2><p>Let's make your business data and documents clearer. Contact SmartWork AI to discuss your requirement or request a free sample.</p><a class="btn" href="mailto:business.smartworkai@gmail.com?subject=SmartWork%20AI%20-%20Project%20Enquiry">Email SmartWork AI</a><div class="contact-line">business.smartworkai@gmail.com<br>+91 8250139362 · Bengaluru, India</div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© 2026 SmartWork AI. All rights reserved.</span><span>Smarter work. Clearer results.</span></div></footer>
+</body></html>
